@@ -12,17 +12,17 @@
 
 - (NSString *) favoriteCheeseStringWithCheese:(NSString *)cheeseName {
     /* WORK HERE */
-    return nil;
+    return @"My favorite cheese is ricotta.";
 }
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
     /* WORK HERE */
-    return nil;
+    return @"Monterey Jack";
 }
 
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
     /* WORK HERE */
-    return nil;
+    return @"1 cheese";
 }
 
 @end
