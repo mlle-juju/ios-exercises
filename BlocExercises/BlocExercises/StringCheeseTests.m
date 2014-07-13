@@ -35,6 +35,11 @@
     NSString *favoriteCheese = [self.stringCheese favoriteCheeseStringWithCheese:ricottaString];
     
     XCTAssertEqualObjects(favoriteCheese, @"My favorite cheese is ricotta.", @"Incorrect favorite cheese string returned.");
+    
+    NSString *swissString = @"swiss";
+    NSString *favoriteCheese2 = [self.stringCheese favoriteCheeseStringWithCheese:swissString];
+    
+    XCTAssertEqualObjects(favoriteCheese2, @"My favorite cheese is swiss.", @"Incorrect favorite cheese string returned.");
 }
 
 - (void)testThatRemovingCheeseSuffixWorks {
