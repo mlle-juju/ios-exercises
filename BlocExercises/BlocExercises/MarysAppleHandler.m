@@ -11,12 +11,19 @@
 @implementation MarysAppleHandler
 
 - (NSString *) itemMaryCanPurchaseForDollars:(NSInteger)dollars {
-    NSString *itemToReturn;
+    NSString *purchasableitem;
 
+    NSNumber *minimumDollars=([NSNumber numberWithInt:4]);
+    
+    NSString *message = (dollars >= minimumDollars) ? @"have some gum" : @"get out of my store";
+    
     /* WORK HERE */
     
-    NSLog(@"For $%ld, Mary can: %@", (long)dollars, itemToReturn);
-    return itemToReturn;
+    
+    
+    
+    NSLog(@"For $%ld, Mary can: %@", (long)dollars, purchasableitem);
+    return purchasableitem;
 }
 
 - (NSUInteger) dollarCostForAppleFlavoredVodka {
