@@ -10,17 +10,17 @@
 
 @implementation EqualityDeterminer
 
-- (BOOL) string:(NSString *)string1 isTheSameAsString:(NSString *)string2 {
+- (BOOL) string:(NSString *)cerealString isTheSameAsString:(NSString *)identicalCerealString {
     /* WORK HERE */
-    return (string1 == string2);
+    return YES;
 }
 
-- (BOOL) number:(NSNumber *)number1 isTheSameAsNumber:(NSNumber *)number2 {
+- (BOOL) number:(NSNumber *)sixNumber isTheSameAsNumber:(NSNumber *)identicalSixNumber {
     /* WORK HERE */
-    return (number1 == number2);
+    return YES;
 }
 
-- (BOOL) integer:(NSInteger)integer1 isGreaterThan:(NSInteger)integer2 {
+- (BOOL) integer:(NSInteger)high isGreaterThan:(NSInteger)low {
     /* WORK HERE */
     return NO;
 }
