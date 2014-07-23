@@ -47,7 +47,7 @@
 }
 
 - (void)testThatMaryCanPurchaseAnAppleComputerFor1000Dollars {
-    NSString *purchasableItem = [self.appleHandler itemMaryCanPurchaseForDollars:1000];
+    NSString *purchasableItem = [self.appleHandler itemMaryCanPurchaseForDollars:1200];
     XCTAssertEqualObjects(purchasableItem, @"have an Apple computer", @"If Mary has $1000+, she should receive an offer to purchase an Apple computer.");
 }
 

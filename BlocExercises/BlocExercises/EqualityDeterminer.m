@@ -11,7 +11,7 @@
 @implementation EqualityDeterminer
 
 - (BOOL)compareStringOne:(NSString *)string1 withStringTwo:(NSString *)string2 {
-    return [string1 isEqualToString:(NSString *):string2];
+    return [string1 isEqualToString:(NSString *)string2];
 }
 
 - (BOOL)number:(NSNumber *)number1 isTheSameAsNumber:(NSNumber *)number2 {
