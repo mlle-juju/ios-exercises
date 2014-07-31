@@ -10,19 +10,36 @@
 
 @implementation AwesomeCounter
 
-- (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
+// -7 9
+// 9 4
 
-    NSInteger smallerNumber = number;
-    NSInteger largerNumber = otherNumber;
+- (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
+    NSInteger smallerNumber;
+    NSInteger largerNumber;
     
-    NSMutableString *stringOfNumbers = @"";
-    for (NSInteger i = smallerNumber; i<= largerNumber; ++i) {
-        // Use i to make a new string
-        // Append to stringOfNumbers
+    if (number > otherNumber) {
+        smallerNumber = otherNumber;
+        largerNumber = number;
+    } else {
+        smallerNumber = number;
+        largerNumber = otherNumber;
     }
+
     
+    NSMutableString *stringOfNumbers = [[NSMutableString alloc] init];
+    for (NSInteger i = smallerNumber; i<=largerNumber; ++i) {
+        // i: 2
+        // numberString: "2"
+        // stringOfNumbers: "-3-2-1012"
+        
+        NSString *numberString = [NSString stringWithFormat:@"%ld", i];
+        [stringOfNumbers appendString:numberString];
+    }
+
     return stringOfNumbers;
 }
+
+
 
 
 

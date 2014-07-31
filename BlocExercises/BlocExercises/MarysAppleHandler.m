@@ -11,7 +11,7 @@
 @implementation MarysAppleHandler
 
 - (NSString *) itemMaryCanPurchaseForDollars:(NSInteger)dollars {
-    NSString *itemToReturn;
+    NSString *itemToReturn = nil;
     
     /* WORK HERE */
     if (dollars==4) {
