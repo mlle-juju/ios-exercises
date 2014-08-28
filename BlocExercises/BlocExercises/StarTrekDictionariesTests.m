@@ -52,9 +52,12 @@
 }
 
 - (void) testThatDrinkArrayWorks {
-    NSArray *characterArray = @[self.worf, self.picard];
+    //NSArray *characterArray = @[self.worf, self.picard];
+    
+    
+    NSArray *actualArray = [self.starTrekDictionaries arrayOfFavoriteDrinksForStarTrekCharacters:@[self.worf, self.picard]];
+    
     NSArray *expectedArray = @[@"prune juice", @"tea, Earl Grey, hot"];
-    NSArray *actualArray = [self.starTrekDictionaries arrayOfFavoriteDrinksForStarTrekCharacters:characterArray];
     XCTAssertEqualObjects(expectedArray, actualArray, @"Incorrect favorite drinks were returned.");
 }
 
