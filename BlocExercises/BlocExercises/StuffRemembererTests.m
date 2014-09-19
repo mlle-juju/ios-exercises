@@ -39,6 +39,8 @@
     XCTAssertEqual(someArray, otherArray, @"These aren't the same array.");
 }
 
+//this sounds like something I would have done in dictionaries. OR it could be related to the memory management bit of Properties & Scope
+
 - (void)testThatArrayIsCopied
 {
     NSMutableArray *someArray = [@[@"string", @123, @{@"key": @"value"}, @[@"an array of 1 string"]] mutableCopy];
@@ -47,6 +49,8 @@
     XCTAssertEqualObjects(someArray, otherArray, @"These arrays aren't equal.");
     XCTAssertNotEqual(someArray, otherArray, @"These arrays are the same instance, but one is supposed to be a copy of the other.");
 }
+
+//the copy thing in Properties & Scope should be used here I believe
 
 - (void)testThatFloatIsRemembered
 {
@@ -57,4 +61,5 @@
     XCTAssertEqual(someFloat, otherFloat, @"The two floats aren't equal.");
 }
 
+//memory management. strong reference cycle.
 @end

@@ -11,30 +11,41 @@
 @implementation StuffRememberer
 
 - (void) rememberThisArrayForLater:(NSMutableArray *)arrayToRemember {
-    /* WORK HERE */
+
+    self.heyArrayToRememberLater = arrayToRemember;
+ //   [self setHeyArrayToRememberLater:arrayToRemember];
 }
 
-- (void) copyThisArrayForLater:(NSMutableArray *)arrayToRemember {
-    /* WORK HERE */
+- (void) copyThisArrayForLater:(NSMutableArray *)arrayToCopy {
+    
+    self.theCopyOfAnArray = arrayToCopy;
+    
 }
 
 - (void) rememberThisFloatForLater:(CGFloat)floatToRemember {
-    /* WORK HERE */
+ 
+    self.floatToRememberLater = floatToRemember;
+    
 }
+
 
 - (NSMutableArray *) arrayYouShouldRemember {
-    /* WORK HERE */
-    return [@[] mutableCopy];
+    return self.heyArrayToRememberLater;
 }
+
 
 - (NSMutableArray *) arrayYouShouldCopy {
-    /* WORK HERE */
-    return [@[] mutableCopy];
+    return self.theCopyOfAnArray;
 }
 
+
 - (CGFloat) floatYouShouldRemember {
-    /* WORK HERE */
-    return 0.0f;
+//    CGFloat *floatYouShouldRemember;
+//    self.floatToRememberLater = *(floatYouShouldRemember);
+    
+    return self.floatToRememberLater;
 }
 
 @end
+
+//Product --> Test
