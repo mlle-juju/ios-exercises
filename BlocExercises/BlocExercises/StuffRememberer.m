@@ -15,6 +15,7 @@
     self.heyArrayToRememberLater = arrayToRemember;
  //   [self setHeyArrayToRememberLater:arrayToRemember];
 }
+//the big block of text, from -(void) to } is a method SIGNATURE. the line self.heyArrayToRememberLater = arrayToRemember is a method CALL.
 
 - (void) copyThisArrayForLater:(NSMutableArray *)arrayToCopy {
     
@@ -32,6 +33,7 @@
 - (NSMutableArray *) arrayYouShouldRemember {
     return self.heyArrayToRememberLater;
 }
+//so this method above (and the other two below) "speaks" to the first method above. the first method at the top of this file ___ the method whereas this one makes sure the compiler remembers it (???) something like that...
 
 
 - (NSMutableArray *) arrayYouShouldCopy {
